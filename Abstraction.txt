@@ -1,0 +1,84 @@
+Online Pizza Order:
+
+Order
+ OrderID,Pizzatype,Pizzasize,Quantity, Preferences,orderStatus
+
+Customer
+customerId,firstName,lastName,mobileNo,emailId
+
+
+Billing
+Public: Customername,Billammount,Timestamp,CGST,taxes,SGST,totalBill
+
+Delivery
+Paymentstatus,Paymentmode,DeliveryStatus
+
+Discount
+	typeofdiscount,discountrate,discountvaliditydate,discountcode,discountCost
+Cancellation
+cancelFee,cancellationTImeStamp
+
+
+Address
+City,Street,flatno,mobileno,pincode
+
+Transaction
+TransactionID,Bankname,Timestamp,Transactionstatus,Transactiontype
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Railway Reservation:
+
+
+
+Train
+Trainno,Trainname,Source,Destination,Traintype
+
+Ticket
+Ticketno,PNRno,Trainno,Date,KM,Adult,Children,Ticketno,Reservation from,Reservation upto,Train name,class,journeyday,Coach,seat/berth,gender,age,T.authority,Ticketfare,Reservationtype,food
+
+[[[Food
+FoodAppliedStatus,TypeOfFood]]]
+
+Passenger
+Passengername,gender,age,Mobileno
+
+Address
+Street,City,state,Pincode
+
+
+Reservation Potral
+from,to, date of journey,seat/berth Preferences,tickettype,ticketfare
+
+Transaction
+TransactionID,Bankname,(Ticketfare,Timestamp),Transactionstatus,Transactiontype
+
+ticketCancellation
+CancellationCharges,DeadlineDate,(pNRNo)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+AirReservation
+
+Passenger: 
+	name,mobileNo,age,gender
+BoardingPass
+flightNo,Class,dateOfJourney,departure,arrival,gateNo,gateClosestimestamp,seatNo
+
+Flight
+flightName,BoardinggPoint,EndingPoint,StartingTime,ReachingTime
+
+[[ConnectingFlights
+	ConnectingFlightsAvailability,NameOfCOnnectingstations
+Food
+	FoodAppliedStatus,TypeOfFood]]
+Transaction
+	TransactionID,Bankname,Timestamp,Transactionstatus,Transactiontype
+
+Cancellation
+	CancellationPolicy,LastDateForCancellation
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
